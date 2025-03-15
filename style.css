@@ -1,0 +1,35 @@
+/*General styles*/
+body {
+    font-family: arial;
+    background-color:black;
+    color: white;
+}
+/*attribute selector*/
+a{
+    color: white;
+ text-decoration: none;
+}
+a:hover{
+    color:cornflowerblue;
+}
+/*child selector*/
+ul>li{
+    font-weight: bold;
+}
+ul li:hover{
+    color:red;
+}
+ul li:nth-child(2) {
+    color:beige;
+   font-weight: bolder;
+}
+ul li::before{
+    content:"🚀";
+}
+a::after{
+    content:"🪐";
+}
+p::first-letter{
+    font-size: 200%;
+    color: yellow;
+}
